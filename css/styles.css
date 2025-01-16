@@ -95,3 +95,16 @@ body {
     color: black;
     text-align: center;
 }
+
+/*API*/
+/*!USO EXCLUSIVO DE LA TIENDA Y EL CONSUMO DE LA API*/
+/*?posible desuso a futuro*/
+.bg-custom {
+    background: #cdcdc0;
+}
+
+.color-cuerpo{
+    background: #626d71;
+}
+
+/*Fin de estilos API*/

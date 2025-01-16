@@ -13,6 +13,7 @@
     <title>Artesanias del Corazon - Misión</title>
 </head>
 <body>
+    <!-- NOTE: Nav-Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
         <div class="container-fluid">
             <img src="img/logo/logo.png" alt="Logo" height="35px" width="35px">
@@ -21,25 +22,38 @@
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav me-auto ms-2 mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">Inicio<span class="sr-only"></span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active disabled" aria-current="page" href="info.html">Información</a>
+                        <a class="nav-link active disabled" aria-current="page" href="info.html">Informacion</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="galeria.html">Galeria</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tiendaAPI.html">Tienda</a>
+                    </li>
                 </ul>
-                <!--Funcionalidad por ser agregada mas adelante-->
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                    <button class="btn btn-dark" type="submit">Search</button>
-                </form>            
+                <form class="d-flex input-group w-auto" role="search">
+                    <input class="form-control me-2" type="text" id="selector" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-dark" type="submit">Buscar</button>
+                </form>
+
+                <!-- Iniciar y registrarse -->
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item signUp-login">
+                      <a class="nav-link" href="#"><span class="fas fa-user"></span>Registrarse</a>
+                    </li>
+                    <li class="nav-item signIp-login">
+                      <a class="nav-link" href="login.html"><span class="fas fa-sign-in-alt"></span>Iniciar Session</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
+    <!--  Termino Nav-Bar -->
 
     <section class="info-tienda py-5">
         <div class="container">
@@ -96,7 +110,7 @@
 </html>
 <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top container">
     <div class="col-md-4 d-flex align-items-center">
-        <img src="img/logo.png" alt="Logo" height="35px" width="35px">
+        <img src="img/logo/logo.png" alt="Logo" height="35px" width="35px">
         <span class="mb-3 ms-2 mb-md-0"> Javier Mendez - Martin Monje © Derechos reservados 2025</span>
     </div>
     <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
