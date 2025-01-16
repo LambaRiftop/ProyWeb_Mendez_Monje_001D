@@ -25,8 +25,9 @@ function showData() {
             title.classList.add("text-center");
             title.textContent = jsonData[i].title;
 
-            const price = document.createElement("P")
-            price.textContent = jsonData[i].price;
+            const price = document.createElement("H5")
+            price.classList.add("text-center");
+            price.textContent = "$"+jsonData[i].price+" USD"; 
 
             const cardBody = document.createElement("DIV");
             cardBody.classList.add("card","h-100","color-cuerpo");
